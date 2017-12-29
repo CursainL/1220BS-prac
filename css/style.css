@@ -61,24 +61,30 @@
 }
 
 .navbar-toggler span {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .navbar-toggler span:nth-child(1) {
-  transform-origin: left-center;
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
 }
 
 .navbar-toggler span:nth-child(2) {
-  transform-origin: left-center;
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
 }
 
 .navbar-toggler span:nth-child(3) {
-  transform-origin: left-center;
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
 }
 
 .navbar-toggler.open span:nth-child(1) {
-  transform: translate(0, 6px) rotate(45deg);
+  -webkit-transform: translate(0, 6px) rotate(45deg);
+          transform: translate(0, 6px) rotate(45deg);
 }
 
 .navbar-toggler.open span:nth-child(2) {
@@ -87,7 +93,8 @@
 }
 
 .navbar-toggler.open span:nth-child(3) {
-  transform: translate(0, -6px) rotate(-45deg);
+  -webkit-transform: translate(0, -6px) rotate(-45deg);
+          transform: translate(0, -6px) rotate(-45deg);
 }
 /* leave burger kitchen */
 
@@ -102,16 +109,21 @@ body {
 
 .card-frame {
   height: 260px;
-  perspective: 800px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
 .c {
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   position: relative;
   cursor:pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 /* .tr {
@@ -122,16 +134,19 @@ body {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
 }
 
 .back {
   background-color: #F0F2F5;
-  transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
 }
 
@@ -141,7 +156,8 @@ body {
 }
 
 .card-frame:hover .c{
-  transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
 }
 /* end of card settings */
 
